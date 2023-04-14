@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="display: grid;
+    grid-template-columns: 100px 100px;">
+      <div style="background-color: aqua;">div1</div>
+      <div style="background-color: bisque;">div2<p>text is right here</p></div>
+    </div>
+
+    <div style="display: grid; margin-top: 30px;
+        grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: aqua;">div1</div>
+      <div style="background-color: bisque;">div2<p>text is right here</p></div>
+      <div style="background-color: rgb(109, 195, 235);">div3</div>
+      <div style="background-color: rgb(29, 206, 112);">div4</div>
+    </div>
+
+    <div style="display: grid; margin-top: 30px;
+            grid-template-columns: 100px 1fr;">  <!-- 1fr means take up all free space -->
+      <div style="background-color: aqua;">100px</div>
+      <div style="background-color: bisque;">100px<p>text is right here</p>
+      </div>
+      <div style="background-color: rgb(109, 195, 235);">div3</div>
+      <div style="background-color: rgb(29, 206, 112);">div4</div>
+    </div>
+
+
+    <div style="display: grid; margin-top: 30px;
+                grid-template-columns: 100px 1fr 2fr;">
+      <!-- 1fr means take up all free space -->
+      <div style="background-color: aqua;">100px</div>
+      <div style="background-color: bisque;">1fr<p>text is right here</p>
+      </div>
+      <div style="background-color: rgb(109, 195, 235);">2fr</div>
+      <div style="background-color: rgb(29, 206, 112);">div4</div>
+    </div>
+
+    <div style="display: grid; margin-top: 50px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    height:200px;
+                    column-gap: 20px;
+                    row-gap: 40px;">
+      <!-- 1fr means take up all free space -->
+      <div style="background-color: aqua;">1frpx</div>
+      <div style="background-color: bisque;">1fr</div>
+      <div style="background-color: rgb(109, 195, 235);">1fr</div>
+      <div style="background-color: rgb(29, 206, 112);">1fr</div>
+      <div style="background-color: rgb(109, 195, 235);">1fr</div>
+      <div style="background-color: rgb(29, 206, 112);">1fr</div>
+    </div>
+      
+  </body>
+</html>

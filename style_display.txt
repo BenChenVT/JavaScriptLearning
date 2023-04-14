@@ -1,0 +1,6 @@
+There are three types of style display.
+1. is block element: such as paragraph, it take up the entire line in their container(such as whole page or in a div)
+2. inline-block elemtn: image, search box   -> only take the space needed 
+3. inline element:  such as <Strong></Strong>  比较不常用
+
+How to swith block to inline-block see example in youtube.html

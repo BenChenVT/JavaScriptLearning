@@ -1,0 +1,71 @@
+.image {
+    width: 100%;
+    /* display: block; */
+    /* height: 300px; */
+    /* object-fit: contain; make the image contain in the area */
+    /* object-position: right; */
+}
+
+.channel-pic {
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+
+.profile {
+    display: inline-block;
+    width: 100%;
+    border-radius: 25px;
+    vertical-align: top;
+}
+
+.info {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+}
+
+
+
+
+.preview {
+    width: 100%;
+    position: relative;
+}
+
+.video-author,
+.video-stats {
+    width: 100%;
+    color: rgb(73, 72, 72)
+        /* display: inline-block; */
+}
+
+.video-time {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    padding-right: 4px;
+    top: 170px;
+    right: 5px;
+    color: white;
+}
+
+.video-title {
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    /* width: 1000px; */
+    margin-left: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 35px;
+    margin-right: 50px;
+}
+
+@media (max-width: 1200px){
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,216 @@
+.header {
+  background-color: white;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index:2;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(215, 215, 215);
+  border-bottom-style: solid;
+}
+
+.notify-container {
+  position: relative
+}
+
+.notif-count {
+  background-color: rgb(212, 6, 6);
+  color:white;
+  font-size: 15px;
+  font-family: Roboto, Arial;
+  position:absolute;
+  top: -2px;
+  right:-2px;
+  padding-left: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 7px;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: white;
+  padding-top: 10px;
+  position: fixed;
+  top: 65px;
+  left:0px;
+  bottom:0px;
+  width: 80px;
+}
+
+.sidelink { /* css selector 这里指target --> sidelink*/
+  /* background-color: lightgray; */
+  display: flex;  /* 这几句话让侧边栏的小图标全部放到每个格子的中间了 */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  /* 这个让文字显示在图标下面 */
+  height:80px;
+  margin-bottom: 1px;
+  cursor: pointer
+}
+
+.sidelink:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.sidelink img { /* css selector 这里指target --> sidelink里面所有的img*/
+  height: 28px;
+}
+
+.sidebar div {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+}
+
+
+.left{
+  /* background-color: lightblue; */
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+
+.menu {
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 35px;
+}
+
+.youtubelogo {
+  height: 30px;
+}
+
+
+.middle {
+  /* background-color: lightpink; */
+  flex:1;
+  
+  margin-right: 40px;
+  margin-left: 40px;
+  max-width: 600px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: rows;
+}
+
+.search-bar {
+  flex:1;  /* 让search bar能变长变短 */
+  display: block;
+  height: 34px;
+  font-size: 16px;
+  padding-left: 12px;  /* make the text "Search" move to right with 12px */
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0,0.15);
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  width: 0;   /* make it shrink all the way to 0 */
+  /* because there is a default value for the width */
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search {
+  height:38px;
+  width:70px;
+  border-radius: 2px;
+  margin-left: -1px;
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+}
+
+.search_icon {
+  height:25px;
+  
+}
+
+.search .tooltip,
+.search_voice .tooltip {
+  font-family: Roboto;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.1s;
+  pointer-events: none; 
+  /* 这句话：鼠标移到tooltip上不会有任何作用 */
+  white-space: nowrap;
+  /* 这句话让空格不会使一句话分行 */
+}
+
+.search:hover .tooltip,
+.search_voice:hover .tooltip {
+  opacity: 1;
+}
+
+.search_voice {
+  margin-left: 18px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  
+}
+
+.search_voice,
+.search {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 这里让button变成flex box 可以让tooltip文字显示于button的正中间 */
+}
+
+.search_voice_icon {
+  height: 28px;
+}
+
+.right {
+  /* background-color: lightgreen; */
+  width:250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex-shrink: 0; /* prevent it from shrinking */
+}
+
+.upload {
+  height: 40px;
+}
+
+.apps {
+  height: 40px;
+}
+
+.notification {
+  height: 40px;
+}
+
+.myChannel {
+  height: 40px;
+  border-radius: 20px;
+}

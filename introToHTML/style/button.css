@@ -1,0 +1,49 @@
+.helloButton {
+    background-color: rgb(204, 204, 9);
+    color: black;
+    border: none;
+    /* border 属于内部， margin 属于外部 */
+    height: 100px;
+    width: 200px;
+    /* not as good as padding */
+    font-weight: bold;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: box-shadow 0.2s,
+        color 0.2s, backgroud-color 0.2s;
+    /* always put transition in the main style*/
+
+    vertical-align: top;
+}
+
+.helloButton:hover {
+    /* when hover over the button */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    /* vertical, horizontal, blur radius */
+}
+
+.helloButton:active {
+    opacity: 0.7;
+    color: rgb(144, 144, 8);
+    background-color: antiquewhite;
+}
+
+.paddingbutton {
+    background-color: rgb(204, 204, 9);
+    color: black;
+    font-size: 35px;
+    /* by default, the button surround by text*/
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 20px;
+
+    vertical-align: top;
+    /* vertical-align meant to align it with button, instead of text */
+    padding-left: 50px;
+    /* use padding add space in the button */
+    padding-top: 30px;
+    transition: box-shadow 0.2s,
+        color 0.2s, backgroud-color 0.2s;
+}

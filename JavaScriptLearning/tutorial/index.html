@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>hello world</h1>
+    <!-- EG1 -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <!-- EG2 -->
+    <label id="label1">Enter your name: </label><br> <!-- br is linke break, like enter-->
+    <input type="text" id="text1"><br>
+    <button type="button" id="button1">submit</button><br>
+
+    <!-- EG6 -->
+    <label type="text" id="countLabel">0</label>
+    <button type="button" id="increaseB">Increase</button>
+    <button type="button" id="resetB">Reset</button>
+    <button type="button" id="decreaseB">Decrease</button><br>
+
+    <!-- EG12 -->
+    <label for="checkbox12" id="cb12">subscribe</label>
+    <input type="checkbox" id="checkbox12">
+    <button id="button12">submit</button><br>
+
+    <label for="visaBtn">VISA</label>
+    <input type="radio" name="card12" id="visaBtn">
+    <label for="visaBtn">MasterCard</label>
+    <input type="radio" name="card12" id="mastercardBtn">
+    <label for="visaBtn">PayPal</label>
+    <input type="radio" name="card12" id="PayPalBtn"><br>
+
+    <!-- EG18 -->
+    <label type="text" id="label18">hello</label><br>
+
+    <!-- EG20 -->
+    <h1>Number Guessing Game</h1>
+    <p>Pick a # between 1 - 10</p>
+    <label>Enter a guess</label>
+    <input type="text" id="guessField20">
+    <input type="submit" id="submitButton20">
+    <button id="submitButton20_1">Submit-using button</button><br>
+
+    <!-- EG21 -->
+    <h1>Temperature convertere</h1>
+    <label>Enter a temperature</label>
+    <input type="text" id="tempField21"><br>
+    <lebel>convert to: </lebel><br>
+    <input type="radio" id="calcius21" name="unit"></input>
+    <label>Celsius</label><br>       <!-- here ^ since these two button has same name-->
+    <input type="radio" id="Fahrenheit21" name="unit"></input>
+    <label>Fahrenheit</label><br>      <!-- here ^ only one of them can be selected at a time-->
+    <input type="submit" id="submitButton21">
+    <p id="result21">result</p>
+
+    <!-- EG26 -->
+    <label id="label26">This is label 26</label><br><br><br>
+
+    <!-- EG32 -->
+    <label id="label32" style="margin-left: 20px">0</label><br>
+    <button id="decreaseButton32" onclick="decreaseCount32()">decrease</button>
+    <button id="increaseButton32" onclick="increaseCount32()">increase</button><br>
+
+    <!-- EG46 -->
+    <button id="button46" style="margin-top: 30px">clear all time out</button><br>
+
+    <!-- EG48 -->
+    <label id="label48" style="margin-top: 30px; display: inline-block;">Date obj</label><br>
+
+    <!-- EG 49 -->
+    <h1 id="label49">the current time is</h1><br>
+
+
+    <script src = "index.js"></script>
+</body>
+</html>

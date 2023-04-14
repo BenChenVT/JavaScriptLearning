@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+  <body>
+    <div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: 
+      lightblue;">div 1 text</div>
+      <div style="background-color: 
+      lightpink;">div 2 <p>hello</p></div>
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: 
+      lightblue;
+      width: 100px;
+      ">100px</div>
+      <div style="background-color: 
+      lightpink;
+      flex: 1">flex 1</div>
+      </div>
+    </div>
+
+<!-- 当grid说100px 1fr 2fr的时候，格式固定且位置不能变 -->
+<!-- 但是flex1 flex2写在这里就能变换顺序并且保持比例不变 -->
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: 
+      lightblue;
+      width: 100px;
+      ">100px</div>
+
+      <div style="background-color: 
+      lightpink;
+      flex: 1;">flex 1</div>
+      
+      <div style="background-color: 
+      lightblue;
+      flex: 2;">flex 2</div> 
+    </div>
+
+
+    <div style="
+          margin-top: 30px;
+          height: 70px;
+          display: flex;
+          flex-direction: row;
+          border-color: black;
+          border-width: 2px;
+          border-style: solid;
+        ">
+      <div style="background-color: 
+          lightblue;
+          width: 100px;
+          ">100px</div>
+    
+      <div style="background-color: 
+          lightpink;
+          flex: 1;">flex 1</div>
+    
+      <div style="background-color: 
+          lightblue;
+          flex: 2;">flex 2</div>
+    </div>
+
+
+    <div style="
+          margin-top: 30px;
+          height: 70px;
+          display: flex;
+          flex-direction: row;
+          border-color: black;
+          border-width: 2px;
+          border-style: solid;
+          justify-content: center; /* start/center/end */
+        ">
+      <div style="background-color: 
+          lightblue;
+          width: 100px;
+          ">100px</div>
+    
+      <div style="background-color: 
+          lightpink;
+          width: 100px;
+          ">100px</div>
+    
+      <div style="background-color: 
+          lightblue;
+          width: 100px;
+          ">100px</div>
+    </div>
+
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        justify-content: space-between; 
+      ">
+      <div style="background-color: 
+        lightblue;
+        width: 100px;
+        ">100px</div>
+    
+      <div style="background-color: 
+        lightpink;
+        width: 100px;
+        ">100px</div>
+    
+      <div style="background-color: 
+        lightblue;
+        width: 100px;
+        ">100px</div>
+    </div>
+    
+
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      border-color: black;
+      border-width: 2px;
+      border-style: solid;
+      justify-content: space-between;
+      align-items: center;  /* start end strach center */
+    ">
+      <div style="background-color: 
+      lightblue;
+      width: 100px;
+      ">100px</div>
+    
+      <div style="background-color: 
+        lightpink;
+        width: 100px;
+        ">100px</div>
+    
+      <div style="background-color: 
+        lightblue;
+        width: 100px;
+        ">100px</div>
+    </div>
+    
+  </body>
+</html>
