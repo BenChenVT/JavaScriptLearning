@@ -8,3 +8,5 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 2023.04.14 07:24:41 INFO  time: initialize in 0.24s
 2023.04.14 07:24:42 WARN  Build server is not auto-connectable.
 2023.04.14 07:24:42 WARN  no build tool detected in workspace '/Users/bcmac/Code/Front_End/Front-end Learning'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Apr 14, 2023 7:35:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
